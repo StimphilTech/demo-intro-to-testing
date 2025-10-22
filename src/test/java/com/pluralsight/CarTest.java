@@ -13,5 +13,5 @@ class CarTest {
  public void brake_SpeedChangeGreaterThanActualSpeed_SpeedIsZero(){
 
 
-}
+} //Steps: Arrange, Act and Arrange
 }
