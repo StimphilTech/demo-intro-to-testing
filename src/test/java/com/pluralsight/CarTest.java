@@ -9,9 +9,29 @@ class CarTest {
 
 
     }
+
+
 @Test
  public void brake_SpeedChangeGreaterThanActualSpeed_SpeedIsZero(){
 
 
-} //Steps: Arrange, Act and Arrange
-}
+} //Steps: Arrange, Act, and Arrange
+
+
+
+
+@Test
+public void accerlerate_should_increaseCarSpeed() {
+    //arrange
+
+    Car car = new Car("Rolls Royce", "Phantom");
+    int speedchange = 15;
+    int expectedSpeed = 15;
+
+    //act
+
+    car.accerlerate(speedchange);
+    int actualSpeed = car.getSpeed();
+    assertEquals(expectedSpeed, actualSpeed);
+}}
+
